@@ -1,0 +1,124 @@
+.home {
+    position: relative;
+    padding-top: 80px;
+}
+.home-wrapper {
+    width: 100%;
+}
+.home-content {
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.home-title {
+    h1 {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 105%;
+    }
+}
+.home-btn {
+    display: inline-block;
+    padding: 33px 0;
+    a {
+        padding: 33px 80px;
+        background: #E8594E;
+        border-radius: 5px;
+
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 2.18px;
+
+        transition: .3s;
+
+        &:hover {
+            background: #d65b52;
+            transition: .3s;
+        }
+    }
+}
+.home-slogan__group {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.home-slogan {
+    width: 100%;
+    display: block;
+    padding: 25px;
+    background: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    p {
+        color: #1C2E3D;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.home-video {
+    width: 502px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+  
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+    .video-slide {
+        height: 280px;
+        width: 100%;
+        video {
+            position: absolute; /* или fixed */
+            width: 100%;
+            height: 280px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            object-fit: cover;
+        }
+    }
+    .name__video-slide {
+        width: 100%;
+        padding: 53px 0;
+        background: #73AFBA;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 82%;
+
+    }
+    .swiper-button-prev:after {
+        font-family: 'Times New Roman', Times, serif;
+        content: url(/assets/img/icon-social/arrow-left.svg);
+    }
+    .swiper-button-next:after {
+        font-family: 'Times New Roman', Times, serif;
+        content: url(/assets/img/icon-social/arrow-right.svg);
+    }
+}

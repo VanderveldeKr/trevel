@@ -1,0 +1,37 @@
+header, .home {
+    background-image: url(/assets/img/all/17.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed; /* !!! */
+}
+
+header {
+    padding-top: 15px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 198px;
+    img {
+        max-width: 100%;
+    }
+}
+.header-social {
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+    ul {
+        li {
+            a {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

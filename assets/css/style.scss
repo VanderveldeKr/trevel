@@ -1,0 +1,11 @@
+//settings start
+@import './settings/reset';
+@import './settings/fonts';
+@import './settings/base';
+//settings end
+
+// blocks start
+@import './blocks/header/header';
+@import './blocks/home/home';
+
+// blocks end
