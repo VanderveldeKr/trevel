@@ -311,6 +311,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <img src="./assets/img/all/20.png" alt="">
+                    <div class="contact-content">
+                        <div class="contact-title_group">
+                            <h3>Прокатимся по миру?</h3>
+                            <p>Заполните форму и мы свяжемся с Вами течение 15 минут</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form-contact form-send" method="post" action="mail.php">
+                            <div class="form-contact__wrapper">
+                                <label>
+                                    <input class="input-form input-form__contact" placeholder="Имя" type="text" name="name" required>
+                                </label>
+                                <label>
+                                    <input class="input-form phone input-form__contact" placeholder="Телефон" type="phone" name="phone" required>
+                                </label>
+                                <label>
+                                    <input class="input-form input-form__contact" placeholder="Мессенджер" type="text" name="messenger">
+                                </label>
+    
+                                <input type="text" name="form-name" value="Форма Звонка" hidden>
+                    
+                                <div class="personality">
+                                    <input class="custom-checkbox" type="checkbox" required name="cheese" id="cheese" />
+                                    <label for="cheese">
+                                        <p>Я даю свое согласие на обработку персональных данных и соглашаюсь с <a Target = "_blank" href="https://uralneftetrans.ru/policy/">политикой конфиденциальности</a></p>  
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="form-btn decortion-btn send-form" type="button">отправить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
