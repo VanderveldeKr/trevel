@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -528,4 +529,90 @@ header {
 }
 .swiper_tours-galery_img span:hover {
   opacity: 1;
+}
+
+.about {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.about-title__group {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.about-title h3 {
+  color: #1C2E3D;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.about-subtitle p {
+  color: #788692;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.about-content ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 350px 400px 350px;
+  grid-auto-flow: row;
+  gap: 16px;
+}
+.about-content li {
+  background: #1C2E3D;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  border-radius: 5px;
+  position: relative;
+}
+.about-content li span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.about-content li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(21, 28, 36, 0.5725490196);
+  opacity: 0;
+  color: #fff;
+  transition: opacity 0.3s linear;
+}
+.about-content li span:hover {
+  opacity: 1;
+}
+.about-content .keks {
+  grid-column: span 2;
+}
+.about-content img {
+  width: 100%;
+  height: 100%;
+  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
