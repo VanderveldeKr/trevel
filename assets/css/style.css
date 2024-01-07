@@ -177,7 +177,7 @@ body {
 header, .home {
   background-image: url(/assets/img/all/17.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed; /* !!! */
 }
@@ -210,6 +210,7 @@ header {
 .home {
   position: relative;
   padding-top: 80px;
+  padding-bottom: 15px;
 }
 
 .home-wrapper {
@@ -249,7 +250,7 @@ header {
 }
 
 .home-slogan__group {
-  margin-top: 70px;
+  margin-top: 75px;
   width: 100%;
   position: relative;
   display: flex;
@@ -313,11 +314,11 @@ header {
 }
 .home-video .name__video-slide {
   width: 100%;
-  padding: 53px 0;
+  padding: 25px 0;
   background: #73AFBA;
 }
 .home-video .swiper-button-next, .home-video .swiper-button-prev {
-  top: 82%;
+  top: 88%;
 }
 .home-video .swiper-button-prev:after {
   font-family: "Times New Roman", Times, serif;
@@ -326,4 +327,176 @@ header {
 .home-video .swiper-button-next:after {
   font-family: "Times New Roman", Times, serif;
   content: url(/assets/img/icon-social/arrow-right.svg);
+}
+
+.upcoming-tours {
+  width: 100%;
+}
+
+.upcoming-tours__title-goup {
+  padding: 50px 0;
+}
+
+.upcoming-tours__title h2 {
+  color: #1C2E3D;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.upcoming-tours__group-card .swiper {
+  width: 100%;
+  height: 100%;
+}
+.upcoming-tours__group-card .swiper-wrapper {
+  width: 100%;
+}
+.upcoming-tours__group-card .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.upcoming-tours__group-card .swiper-button-prev {
+  left: 85%;
+}
+.upcoming-tours__group-card .swiper-button-next {
+  right: 5%;
+}
+.upcoming-tours__group-card .swiper-button-next, .upcoming-tours__group-card .swiper-button-prev {
+  top: 61px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 2s infinite;
+}
+.upcoming-tours__group-card .pulse:hover {
+  animation: none;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+.upcoming-tours__group-card .swiper-button-prev:after {
+  font-family: "Times New Roman", Times, serif;
+  content: url(/assets/img/icon-social/arrow-tours.svg);
+}
+.upcoming-tours__group-card .swiper-button-next {
+  transform: rotate(180deg);
+}
+.upcoming-tours__group-card .swiper-button-next:after {
+  font-family: "Times New Roman", Times, serif;
+  content: url(/assets/img/icon-social/arrow-tours.svg);
+}
+
+.swiper_tours-content__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper_tours-content {
+  width: 100%;
+  z-index: 1;
+  padding: 70px 0;
+  text-align: left;
+  position: relative;
+}
+.swiper_tours-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_tours-info {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.swiper_tours-info h3 {
+  max-width: 640px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 133%;
+}
+.swiper_tours-info a {
+  background: #73AFBA;
+}
+.swiper_tours-info a:hover {
+  background: #55929c;
+  transition: 0.3s;
+}
+
+.swiper_tours-detals {
+  max-width: 30%;
+}
+.swiper_tours-detals::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  height: 100%;
+  background-color: #3C4A51;
+  opacity: 0.8;
+  z-index: -1;
+}
+.swiper_tours-detals h3 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 125%;
+}
+.swiper_tours-detals ul {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.swiper_tours-detals ul li {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 133%;
+  border-bottom: 2px solid #405d74;
+}
+.swiper_tours-detals p {
+  padding-top: 20px;
+}
+
+.swiper_tours-galery {
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.swiper_tours-galery_img {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_tours-galery_img img {
+  max-width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

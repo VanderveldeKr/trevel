@@ -1,6 +1,7 @@
 .home {
     position: relative;
     padding-top: 80px;
+    padding-bottom: 15px;
 }
 .home-wrapper {
     width: 100%;
@@ -41,7 +42,7 @@
     }
 }
 .home-slogan__group {
-    margin-top: 70px;
+    margin-top: 75px;
     width: 100%;
     position: relative;
     display: flex;
@@ -106,12 +107,11 @@
     }
     .name__video-slide {
         width: 100%;
-        padding: 53px 0;
+        padding: 25px 0;
         background: #73AFBA;
     }
     .swiper-button-next, .swiper-button-prev {
-        top: 82%;
-
+        top: 88%;
     }
     .swiper-button-prev:after {
         font-family: 'Times New Roman', Times, serif;
