@@ -1,0 +1,21 @@
+@media(max-width:1100px) {
+    .all-video {
+        padding: 0;
+        .swiper-slide {
+            height: auto;
+        }
+
+        .swiper-button-prev {
+            left: 65%;
+        }
+    }
+    
+}
+@media(max-width:620px) {
+    .all-video {
+
+        .swiper-button-prev {
+            left:55%;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@media(max-width:1100px) {
+    .upcoming-tours__title-goup {
+        padding: 25px 0;
+    }
+    .upcoming-tours__title {
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    .upcoming-tours__group-card {
+        .swiper-button-prev {
+            left: 67%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 40px;
+        }
+    }
+    .swiper_tours-info {
+        h3{
+            font-size: 36px;
+            max-width: 100%;
+        }
+    }
+    .swiper_tours-detals {
+        max-width: 30%;
+        margin-left: 25px;
+        &::after {
+            width: 40%;
+        }
+        h3 {
+            font-size: 48px;
+        }
+        ul {
+            margin-top: 20px;
+        }
+        ul {
+            li {
+                padding: 10px 0;
+    
+                font-size: 14px;
+            }
+        }
+    }
+    .swiper_tours-galery_img {
+        width: 31%;
+        margin-bottom: 15px;
+
+        span {
+            padding-left: 10px;
+            padding-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+}
+@media(max-width:640px) {
+    .swiper_tours-content {
+        padding: 35px 0;
+    }
+    .swiper_tours-content__wrapper {
+        flex-direction: column;
+    }
+    .upcoming-tours__group-card {
+        .swiper-button-prev {
+            left: 50%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 55%;
+        }
+    }
+    .swiper_tours-detals {
+        padding-top: 50px;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        &::after {
+            top: 45%;
+            width: 100%;
+            height: 55%;
+        }
+        h3 {
+            font-size: 32px;
+        }
+        ul {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        li {
+            width: 100%;
+
+            font-size: 12px;
+        }
+    }
+    .home-btn a {
+        padding: 15px 40px;
+    }
+    .swiper_tours-galery {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 25px 0;
+    }
+    .swiper_tours-galery_img {
+        width: 31%;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:480px) {
+    .upcoming-tours__group-card {
+        .swiper-button-prev {
+            left: 50%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 60%;
+        }
+    }
+}
+@media(max-width:480px) {
+    .upcoming-tours__group-card {
+        .swiper-button-prev {
+            left: 50%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 65%;
+        }
+    }
+}

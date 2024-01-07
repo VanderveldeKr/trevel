@@ -208,9 +208,162 @@ header {
   width: 30px;
 }
 
+.header-social__mobile {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .header-social__mobile {
+    display: block;
+  }
+  .header-social__desktop {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+  }
+}
+.burger-menu {
+  display: block;
+}
+
+.header-nav {
+  display: none;
+}
+
+.burger-menu_button {
+  position: fixed;
+  top: 15%;
+  right: 20px;
+  z-index: 30;
+  width: 45px;
+  height: 45px;
+  background-color: #73AFBA;
+  transition: 0.4s;
+}
+
+.burger-menu_button:hover .burger-menu_lines {
+  filter: brightness(0.7);
+}
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #1C2E3D;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu_lines::before {
+  content: "";
+  top: -10px;
+}
+
+.burger-menu_lines::after {
+  content: "";
+  top: 10px;
+}
+
+.burger-menu_active .burger-menu_lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu_lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu_lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu_nav {
+  width: 20%;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(60, 74, 81, 0.8);
+  overflow-y: auto;
+  top: 0;
+  right: -100%;
+  transition: 0.8s;
+}
+
+.burger-menu_active .burger-menu_nav {
+  right: 0;
+  transition: 0.4s;
+}
+
+.burger-menu_link {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 106%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.burger-menu_link:hover {
+  filter: brightness(0.7);
+}
+
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu_overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1100px) {
+  .burger-menu_nav {
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .burger-menu_nav {
+    width: 50%;
+  }
+  .burger-menu_link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 460px) {
+  .burger-menu_nav {
+    width: 70%;
+  }
+  .burger-menu_link {
+    font-size: 14px;
+  }
+}
 .home {
   position: relative;
-  padding-top: 80px;
+  padding-top: 75px;
   padding-bottom: 15px;
 }
 
@@ -222,13 +375,17 @@ header {
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
 }
 
 .home-title h1 {
   font-size: 80px;
   font-weight: 700;
   line-height: 105%;
+}
+
+.home-subtitle ul li {
+  font-size: 24px;
 }
 
 .home-btn {
@@ -330,6 +487,39 @@ header {
   content: url(/assets/img/icon-social/arrow-right.svg);
 }
 
+@media (max-width: 1100px) {
+  .home-slogan__group {
+    flex-direction: column;
+  }
+  .home-video {
+    position: static;
+    width: 100%;
+  }
+  .home-title h1 {
+    font-size: 64px;
+  }
+  .home-subtitle ul li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 620px) {
+  .home {
+    padding-top: 35px;
+  }
+  .home-content {
+    max-width: 100%;
+    gap: 10px;
+  }
+  .home-title h1 {
+    font-size: 42px;
+  }
+  .home-subtitle ul li {
+    font-size: 16px;
+  }
+  .home-slogan__group {
+    margin-top: 20px;
+  }
+}
 .upcoming-tours {
   width: 100%;
 }
@@ -548,6 +738,116 @@ header {
   opacity: 1;
 }
 
+@media (max-width: 1100px) {
+  .upcoming-tours__title-goup {
+    padding: 25px 0;
+  }
+  .upcoming-tours__title h2 {
+    font-size: 42px;
+  }
+  .upcoming-tours__group-card .swiper-button-prev {
+    left: 67%;
+  }
+  .upcoming-tours__group-card .swiper-button-next, .upcoming-tours__group-card .swiper-button-prev {
+    top: 40px;
+  }
+  .swiper_tours-info h3 {
+    font-size: 36px;
+    max-width: 100%;
+  }
+  .swiper_tours-detals {
+    max-width: 30%;
+    margin-left: 25px;
+  }
+  .swiper_tours-detals::after {
+    width: 40%;
+  }
+  .swiper_tours-detals h3 {
+    font-size: 48px;
+  }
+  .swiper_tours-detals ul {
+    margin-top: 20px;
+  }
+  .swiper_tours-detals ul li {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .swiper_tours-galery_img {
+    width: 31%;
+    margin-bottom: 15px;
+  }
+  .swiper_tours-galery_img span {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .swiper_tours-content {
+    padding: 35px 0;
+  }
+  .swiper_tours-content__wrapper {
+    flex-direction: column;
+  }
+  .upcoming-tours__group-card .swiper-button-prev {
+    left: 50%;
+  }
+  .upcoming-tours__group-card .swiper-button-next, .upcoming-tours__group-card .swiper-button-prev {
+    top: 55%;
+  }
+  .swiper_tours-detals {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .swiper_tours-detals::after {
+    top: 45%;
+    width: 100%;
+    height: 55%;
+  }
+  .swiper_tours-detals h3 {
+    font-size: 32px;
+  }
+  .swiper_tours-detals ul {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .swiper_tours-detals li {
+    width: 100%;
+    font-size: 12px;
+  }
+  .home-btn a {
+    padding: 15px 40px;
+  }
+  .swiper_tours-galery {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px 0;
+  }
+  .swiper_tours-galery_img {
+    width: 31%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .upcoming-tours__group-card .swiper-button-prev {
+    left: 50%;
+  }
+  .upcoming-tours__group-card .swiper-button-next, .upcoming-tours__group-card .swiper-button-prev {
+    top: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .upcoming-tours__group-card .swiper-button-prev {
+    left: 50%;
+  }
+  .upcoming-tours__group-card .swiper-button-next, .upcoming-tours__group-card .swiper-button-prev {
+    top: 65%;
+  }
+}
 .about {
   width: 100%;
   padding: 50px 0;
@@ -651,6 +951,26 @@ header {
   border-radius: 5px;
 }
 
+@media (max-width: 1100px) {
+  .about-content ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .about-content .keks {
+    grid-column: 1;
+  }
+}
+@media (max-width: 640px) {
+  .about-title h3 {
+    font-size: 36px;
+  }
+  .about-subtitle p {
+    font-size: 14px;
+  }
+  .about-content li span {
+    font-size: 12px;
+  }
+}
 .contact {
   width: 100%;
   padding: 50px 0;
@@ -722,24 +1042,24 @@ header {
   max-width: 500px;
   position: absolute;
   bottom: -97px;
-  right: 100px;
+  right: 50px;
 }
 
 .form-contact__wrapper {
   background-color: #fff;
   color: #1C2E3D;
-  padding-top: 46px;
-  padding-bottom: 36px;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-top: 36px;
+  padding-bottom: 26px;
+  padding-left: 63px;
+  padding-right: 63px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 .form-contact__wrapper label {
-  padding: 32px 0;
-  border-bottom: rgba(28, 46, 61, 0.6509803922) solid 2px;
+  padding: 20px 0;
+  border-bottom: rgba(28, 46, 61, 0.5137254902) solid 2px;
 }
 
 .personality {
@@ -817,4 +1137,146 @@ header {
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
+}
+
+@media (max-width: 1100px) {
+  .contact-content {
+    padding: 0 133px;
+  }
+  .contact-wrapper {
+    padding-bottom: 50px;
+  }
+  .contact-title_group {
+    max-width: 100%;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-title_group h3 {
+    font-size: 52px;
+  }
+  .contact-form {
+    position: static;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 620px) {
+  .contact-wrapper {
+    width: 100%;
+  }
+  .contact-title_group {
+    padding: 25px 0;
+    gap: 15px;
+  }
+  .contact-content {
+    padding: 0;
+  }
+  .contact-title_group h3 {
+    font-size: 32px;
+  }
+  .contact-title_group p {
+    font-size: 18px;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .form-contact__wrapper {
+    padding: 16px 30px;
+  }
+  .decortion-btn {
+    padding: 20px 0;
+  }
+}
+.all-video {
+  padding: 100px 0;
+  width: 100%;
+}
+.all-video .swiper {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.all-video .swiper-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.all-video .swiper-slide {
+  background-position: top;
+  background-size: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 550px;
+  border-radius: 5px;
+}
+.all-video .swiper-slide video {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.all-video .swiper-button-prev {
+  left: 85%;
+}
+.all-video .swiper-button-next {
+  right: 5%;
+}
+.all-video .swiper-button-next, .all-video .swiper-button-prev {
+  top: 90%;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+}
+.all-video .swiper-button-prev:after {
+  font-family: "Times New Roman", Times, serif;
+  content: url(/assets/img/icon-social/arrow-tours.svg);
+}
+.all-video .swiper-button-next {
+  transform: rotate(180deg);
+}
+.all-video .swiper-button-next:after {
+  font-family: "Times New Roman", Times, serif;
+  content: url(/assets/img/icon-social/arrow-tours.svg);
+}
+
+@media (max-width: 1100px) {
+  .all-video {
+    padding: 0;
+  }
+  .all-video .swiper-slide {
+    height: auto;
+  }
+  .all-video .swiper-button-prev {
+    left: 65%;
+  }
+}
+@media (max-width: 620px) {
+  .all-video .swiper-button-prev {
+    left: 55%;
+  }
+}
+footer {
+  width: 100%;
+  border-top: solid 2px #1C2E3D;
+}
+
+.footer-wrapper {
+  padding: 25px 0;
+}
+.footer-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.footer-wrapper ul li, .footer-wrapper ul a {
+  color: #1C2E3D;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

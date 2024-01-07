@@ -1,0 +1,20 @@
+.header-social__mobile {
+    display: none;
+}
+@media(max-width: 620px) {
+    .header-social__mobile {
+        display: block;
+    }
+    .header-social__desktop {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        width: 120px;
+    }
+}

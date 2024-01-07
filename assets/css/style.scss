@@ -6,9 +6,25 @@
 
 // blocks start
 @import './blocks/header/header';
+@import './blocks/header/mobile-header';
+@import './blocks/header/burger';
+@import './blocks/header/mobile-burger';
+
 @import './blocks/home/home';
+@import './blocks/home/mobile-home';
+
 @import './blocks/upcoming-tours/upcoming-tours';
+@import './blocks/upcoming-tours/mobile-upcoming-tours';
+
 @import './blocks/about/about';
+@import './blocks/about/mobile-about';
+
 @import './blocks/contact/contact';
+@import './blocks/contact/mobile-contact';
+
+@import './blocks/all-video/all-video';
+@import './blocks/all-video/mobile-all-video';
+
+@import './blocks/footer/footer';
 
 // blocks end

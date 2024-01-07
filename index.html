@@ -11,20 +11,42 @@
     <header>
         <div class="container">
             <div class="header-wrapper">
-                <div class="logo">
+                <div class="logo logo-mobile">
                     <img src="./assets/img/icon-social/airplane-icon.svg" alt="Логотип карты + самолет">
                 </div>
-                <div class="header-social">
+                <div class="header-social header-social__desktop">
                     <ul>
-                        <li><a href="#"><img src="./assets/img/icon-social/vk-icon.svg" alt="Иконка Вконтакте"></a></li>
-                        <li><a href="#"><img src="./assets/img/icon-social/tg-icon.svg" alt="Иконка Телеграмм"></a></li>
-                        <li><a href="#"><img src="./assets/img/icon-social/phone-icon.svg" alt="Иконка Позвонить"></a></li>
+                        <li><a Target = "_blank" href="#"><img src="./assets/img/icon-social/vk-icon.svg" alt="Иконка Вконтакте"></a></li>
+                        <li><a Target = "_blank" href="https://t.me/lamourdetavie1 "><img src="./assets/img/icon-social/tg-icon.svg" alt="Иконка Телеграмм"></a></li>
+                        <li><a Target = "_blank" href="tel:+79585006802"><img src="./assets/img/icon-social/phone-icon.svg" alt="Иконка Позвонить"></a></li>
                     </ul>
                 </div>
                 <div class="logo">
                     <img src="./assets/img/icon-social/logo-icon.svg" alt="Eat Pray Travel With Saya">
+
+                    <div class="header-social header-social__mobile">
+                        <ul>
+                            <li><a Target = "_blank" href="#"><img src="./assets/img/icon-social/vk-icon.svg" alt="Иконка Вконтакте"></a></li>
+                            <li><a Target = "_blank" href="https://t.me/lamourdetavie1 "><img src="./assets/img/icon-social/tg-icon.svg" alt="Иконка Телеграмм"></a></li>
+                            <li><a Target = "_blank" href="tel:+79585006802"><img src="./assets/img/icon-social/phone-icon.svg" alt="Иконка Позвонить"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="burger-menu" style="z-index: 999;">
+            <a href="" class="burger-menu_button">
+              <span class="burger-menu_lines"></span>
+            </a>
+            
+            <nav class="burger-menu_nav home__block-text">
+              <a href="#home" class="burger-menu_link">Главная</a>
+              <a href="#tours" class="burger-menu_link">Туры</a>
+              <a href="#about" class="burger-menu_link">Познакомимся?</a>
+              <a href="#contact" class="burger-menu_link">Контакты</a>
+              <a href="#video" class="burger-menu_link">Видеогалерея</a>
+            </nav>
+            <div class="burger-menu_overlay"></div>
         </div>
     </header>
 
@@ -45,7 +67,7 @@
                         </div>
                         <div class="home-btn">
                             <div class="home-btn__wrapper">
-                                <a href="">подробнее</a>
+                                <a href="#contact">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -109,18 +131,18 @@
                                 <div class="swiper_tours-content">
                                     <img src="./assets/img/all/17.png" alt="Озеро байкал">
                                     <div class="container">
-                                            <div class="swiper_tours-content__wrapper">
+                                        <div class="swiper_tours-content__wrapper">
                                             <div class="swiper_tours-info">
                                                 <h3>Ледовое путешествие на Байкал 2024</h3>
                                                 <p>Байкал - место силы. А зимний Байкал - место волшебства.</p>
                                                 <div class="home-btn">
-                                                    <a href="#">Программа тура</a>
+                                                    <a Target = "_blank" href="https://drive.google.com/file/d/1Yd72Gne31BOQylTvfcy7Y1ObZwsTp0Y4/view?usp=drivesdk">Программа тура</a>
                                                 </div>
                                             </div>
                                             <div class="swiper_tours-detals">
                                                 <h3>Байкал</h3>
                                                 <ul>
-                                                    <li>Цена: Цена 87 000т.р</li>
+                                                    <li>Цена: 87 000т.р</li>
                                                     <li>Даты: 11-15 февраля</li>
                                                     <li>Баня на льду Байкала</li>
                                                     <li>Посещение обряда приветствия и очищения у удаганки</li>
@@ -340,7 +362,7 @@
                                 <div class="personality">
                                     <input class="custom-checkbox" type="checkbox" required name="cheese" id="cheese" />
                                     <label for="cheese">
-                                        <p>Я даю свое согласие на обработку персональных данных и соглашаюсь с <a Target = "_blank" href="https://uralneftetrans.ru/policy/">политикой конфиденциальности</a></p>  
+                                        <p>Я даю свое согласие на обработку персональных данных и соглашаюсь с <a Target = "_blank" href="/polytic.pdf">политикой конфиденциальности</a></p>  
                                     </label>
                                 </div>
                             </div>
@@ -352,10 +374,49 @@
                 </div>
             </div>
         </div>
+
+        <div class="all-video">
+            <div class="swiper slider-vedeo">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <video src="/assets/video/bur.mp4" muted autoplay loop controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/assets/video/dub-s.mp4" muted autoplay loop controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/assets/video/dub.mp4" muted autoplay loop controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/assets/video/bur.mp4" muted autoplay loop controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/assets/video/dub-s.mp4" muted autoplay loop controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="/assets/video/dub.mp4" muted autoplay loop controls></video>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"><img src="/assets/img/icon-social/arrow-tours.svg" alt=""></div>
+                <div class="swiper-button-prev"><img src="/assets/img/icon-social/arrow-tours.svg" alt=""></div>
+
+
+              </div>
+        </div>
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul>
+                    <li>Таджидинова Саида Санжаровна</li>
+                    <li><a href="/polytic.pdf" Target = "_blank">Политика Конфиденциальности</a></li>
+                    <li>© 2024 Все права защищены.</li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

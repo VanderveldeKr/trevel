@@ -1,0 +1,21 @@
+@media(max-width:1100px){
+    .burger-menu_nav {
+        width: 50%;
+      }
+}
+@media(max-width:640px){
+    .burger-menu_nav {
+        width: 50%;
+    }
+    .burger-menu_link {
+        font-size: 14px;
+    }
+}
+@media(max-width:460px){
+    .burger-menu_nav {
+        width: 70%;
+    }
+    .burger-menu_link {
+        font-size: 14px;
+    }
+}
