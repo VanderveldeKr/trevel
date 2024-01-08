@@ -49,6 +49,10 @@
     .swiper-button-prev:after {
         font-family: 'Times New Roman', Times, serif;
         content: url(/assets/img/icon-social/arrow-tours.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        width: 50px;
+        height: 50px;
     }
     .swiper-button-next {
         transform: rotate(180deg);
@@ -56,5 +60,9 @@
     .swiper-button-next:after {
         font-family: 'Times New Roman', Times, serif;
         content: url(/assets/img/icon-social/arrow-tours.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        width: 50px;
+        height: 50px;
     }
 }
