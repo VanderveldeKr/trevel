@@ -1,5 +1,7 @@
 .upcoming-tours {
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 .upcoming-tours__title-goup {
     padding: 50px 0;
@@ -78,7 +80,7 @@
     }
     .swiper-button-prev:after {
         font-family: 'Times New Roman', Times, serif;
-        content: url(/assets/img/icon-social/arrow-tours.svg);
+        content: url(../img/icon-social/arrow-tours.svg);
         background-position: center;
         background-size: 100% 100%;
         width: 50px;
@@ -89,7 +91,7 @@
     }
     .swiper-button-next:after {
         font-family: 'Times New Roman', Times, serif;
-        content: url(/assets/img/icon-social/arrow-tours.svg);
+        content: url(../img/icon-social/arrow-tours.svg);
         background-size: 100% 100%;
         width: 50px;
         height: 50px;
@@ -154,7 +156,7 @@
         z-index: -1;
     }
     h3 {
-        font-size: 64px;
+        font-size: 48px;
         font-weight: 700;
         line-height: 125%;
     }
@@ -195,7 +197,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        background-image: url(/assets/img/icon-social/tap.svg);
+        background-image: url(../img/icon-social/tap.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         width: 50px;

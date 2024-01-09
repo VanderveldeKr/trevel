@@ -1,6 +1,3 @@
-// .burger-menu, .mobile__search-icon {
-//     display: none;
-// }
 .burger-menu {
     display: block;
   }
@@ -16,6 +13,7 @@
     height: 45px;
     background-color: #73AFBA;
     transition: 0.4s;
+    z-index: 99999;
   }
   .burger-menu_button:hover .burger-menu_lines {
     filter: brightness(0.7);

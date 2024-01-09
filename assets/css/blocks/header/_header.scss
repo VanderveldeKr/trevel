@@ -1,13 +1,10 @@
-header, .home {
-    background-image: url(/assets/img/all/17.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed; /* !!! */
-}
-
 header {
     padding-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 .header-wrapper {
     display: flex;

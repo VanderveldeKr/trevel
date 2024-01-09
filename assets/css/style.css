@@ -108,55 +108,55 @@ legend {
 
 @font-face {
   font-family: "SFProText";
-  src: url("/assets/fonts/SFProText-Regular-1.ttf") format("truetype");
+  src: url("../fonts/SFProText-Regular-1.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "SFProDisplay";
-  src: url("/assets/fonts/SFProDisplay-Semibold.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "SFProDisplay";
-  src: url("/assets/fonts/SFProDisplay-Regular-1.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Regular-1.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "SFProDisplay";
-  src: url("/assets/fonts/SFProDisplay-Medium-1.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Medium-1.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "SFProDisplay";
-  src: url("/assets/fonts/SFProDisplay-Heavy-1.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Heavy-1.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "SFProDisplay";
-  src: url("/assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "SFCompactText";
-  src: url("/assets/fonts/SFCompactText-Regular.ttf") format("truetype");
+  src: url("../fonts/SFCompactText-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "SFCompactText";
-  src: url("/assets/fonts/SFCompactText-Light.ttf") format("truetype");
+  src: url("../fonts/SFCompactText-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("/assets/fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  src: url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -175,16 +175,13 @@ body {
   padding: 0 17px;
 }
 
-header, .home {
-  background-image: url(/assets/img/all/17.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed; /* !!! */
-}
-
 header {
   padding-top: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -245,6 +242,7 @@ header {
   height: 45px;
   background-color: #73AFBA;
   transition: 0.4s;
+  z-index: 99999;
 }
 
 .burger-menu_button:hover .burger-menu_lines {
@@ -363,8 +361,22 @@ header {
 }
 .home {
   position: relative;
-  padding-top: 75px;
+  padding-top: 200px;
   padding-bottom: 15px;
+  z-index: 0;
+}
+
+.home-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-wrapper {
@@ -384,7 +396,7 @@ header {
   line-height: 105%;
 }
 
-.home-subtitle ul li {
+.home-subtitle {
   font-size: 24px;
 }
 
@@ -480,11 +492,11 @@ header {
 }
 .home-video .swiper-button-prev:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-left.svg);
+  content: url(../img/icon-social/arrow-left.svg);
 }
 .home-video .swiper-button-next:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-right.svg);
+  content: url(../img/icon-social/arrow-right.svg);
 }
 
 @media (max-width: 1100px) {
@@ -504,7 +516,7 @@ header {
 }
 @media (max-width: 620px) {
   .home {
-    padding-top: 35px;
+    padding-top: 130px;
   }
   .home-content {
     max-width: 100%;
@@ -522,6 +534,8 @@ header {
 }
 .upcoming-tours {
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .upcoming-tours__title-goup {
@@ -583,7 +597,7 @@ header {
 }
 .upcoming-tours__group-card .swiper-button-prev:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-tours.svg);
+  content: url(../img/icon-social/arrow-tours.svg);
   background-position: center;
   background-size: 100% 100%;
   width: 50px;
@@ -594,7 +608,7 @@ header {
 }
 .upcoming-tours__group-card .swiper-button-next:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-tours.svg);
+  content: url(../img/icon-social/arrow-tours.svg);
   background-size: 100% 100%;
   width: 50px;
   height: 50px;
@@ -661,7 +675,7 @@ header {
   z-index: -1;
 }
 .swiper_tours-detals h3 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 125%;
 }
@@ -701,7 +715,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(/assets/img/icon-social/tap.svg);
+  background-image: url(../img/icon-social/tap.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 50px;
@@ -907,7 +921,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(/assets/img/icon-social/tap.svg);
+  background-image: url(../img/icon-social/tap.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 50px;
@@ -1128,7 +1142,7 @@ header {
 
 .custom-checkbox:checked + label::before {
   background-color: #D7D7D7;
-  background-image: url(/assets/img/icon-social/check-mark.svg);
+  background-image: url(../img/icon-social/check-mark.svg);
 }
 
 /* стили при наведении курсора на checkbox */
@@ -1199,6 +1213,8 @@ header {
 .all-video {
   padding: 100px 0;
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 .all-video .swiper {
   margin: 0 auto;
@@ -1243,7 +1259,7 @@ header {
 }
 .all-video .swiper-button-prev:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-tours.svg);
+  content: url(../img/icon-social/arrow-tours.svg);
   background-position: center;
   background-size: 100% 100%;
   width: 50px;
@@ -1254,7 +1270,7 @@ header {
 }
 .all-video .swiper-button-next:after {
   font-family: "Times New Roman", Times, serif;
-  content: url(/assets/img/icon-social/arrow-tours.svg);
+  content: url(../img/icon-social/arrow-tours.svg);
   background-position: center;
   background-size: 100% 100%;
   width: 50px;
